@@ -99,7 +99,6 @@ function generarTabla(eleccion){
     }, 1500)
 }
 
-
 /*JUNTAR FUNCIONES*/
 let buscarTotal = document.getElementById("botonTotal")
 buscarTotal.addEventListener("click", buscar)
