@@ -19,38 +19,55 @@
 </head>
 <body>
     <header>
-        <img src="..\media\foto.jpg" width="50%" class="rounded mx-auto d-block"></img>
-        
+       
+    <div id="carouselExampleIndicators" class="carousel slide" >
+        <div class="carousel">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="..\media\foto.jpg" class="d-block w-100" alt="Estudio de danzas" >
+            <div class="carousel-caption d-none d-md-block" >
+              <h2 class="card-title text-end">¡Bienvenidos al estudio!</h5>
+              <h6 class="card-text text-end text-wrap text-truncate" >Descubrí las clases ideales para vos</h6>
+              
+            </div>
+          </div>
+
+        </div>
         <h1>Clases de danza</h1>
-        <h3>Mariana Padelin. Comisión 39470</h3>
-        <h3>Para buscar una clase, haga click en la pestaña "Consultas"</h3>
         
-        <nav class="navbar bg-body-tertiary">
-            
-            <a class="navbar-brand" href= "..\html\consultas.html">Consultas</a>           
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">            
+            <a class="navbar-brand text-light" href= "..\html\consultas.html">Consultas</a>           
 
         </nav>
         <br>
     </header>
     <main>
-        <section class="intro">
-            <h2>Sobre mi</h2>
-            <p> Mariana Padelin es Profesora de Danzas y Coreógrafa, 
-            recibida en la Escuela de Danzas Reina Reech, 
-            <br>con especialización en jazz, clásico y contemporáneo. 
-            <br>Es Instructora de Pilates Reformer y Personal Trainer, 
+        <div class="card text-center" id="presentacion">
+            <div class="card-header">La escuela</div>
+            <div class="card-body">
+            <h3 class="card-title">Sobre mi</h3>
+            <p class="card-text justify-content-left">Mariana Padelin es Profesora de Danzas y Coreógrafa, 
+            recibida en la Escuela de Danzas Reina Reech, con especialización en jazz, clásico y contemporáneo. 
+            Es Instructora de Pilates Reformer y Personal Trainer, 
             certificada por el instituto San Fernando. 
-            <br>Es Instructora de Esferodinamia certificada por el instituto ICAI e
-            Instructora de Stretching certificada por instituto AMAIP, avalado por el Ministerio de Desarrollo Social.
-            </p>
-        </section>
-        <section class="clases">
+            Es Instructora de Esferodinamia certificada por el instituto ICAI e
+            Instructora de Stretching certificada por instituto AMAIP, avalado por el Ministerio de Desarrollo Social.</p>
+            <a href="https://www.youtube.com/channel/UC0fjOvFmulIvqx3XS3YhJEg" target="_blank" class="btn btn-primary">Mirá nuestro canal de youtube</a>
+            </div>
+            <div class="card-footer text-body-secondary">May 2023</div>
+        </div>
+        <br>
+        <section>
             <div class="text-primary" id="cargando"></div>
             <h2>Clases disponibles en el estudio</h2>
             <h5>Para saber el total de tu cuota, seleccioná las clases que te interesan y luego seleccioná el botón "OBTENER TOTAL"</h5>
             <button type="button" class="btn btn-primary" id="total">OBTENER TOTAL</button>
             <button type="button" class="btn btn-primary" id="clear">BORRAR CLASES</button>
-            <div id= "disponibles"></div>   
+            <div class="container row g-1" id= "disponibles"></div>   
                
         </section>
 

@@ -19,15 +19,17 @@ obtenerCursos()
 function cargarArrayCursos (cursos) {
         cursos.forEach(curso => {
             let contenedor = document.createElement('div')      
-                contenedor.innerHTML += `<img class="imagen-tarjeta"  style="width:200px" src="${curso.imagen}"></div>
-                                        <h4 class="nombre-tarjeta">NOMBRE: ${curso.nombre}</h4>
-                                        <p class="dificultad-tarjeta"><b>DIFICULTAD: ${curso.dificultad}</b></p>
-                                        <p class="edades-tarjeta"><b>EDAD: ${curso.edad}</b></p>
-                                        <p class="horario-tarjeta"><b>${curso.horario}</b></p>
+                contenedor.innerHTML += `<div class="col-6" id="tarjeta">
+                                        <img style="width:200px" src="${curso.imagen}">
+                                        <h4>${curso.nombre}</h4>
+                                        <p><b>DIFICULTAD: ${curso.dificultad}</b></p>
+                                        <p><b>EDAD: ${curso.edad}</b></p>
+                                        <p><b>${curso.horario}</b></p>
                                         <button type="button" class="btn btn-secondary"id=info-${curso.id} >+INFO</button>
                                         <br>                            
                                         <button type="button" class="btn btn-primary" id=${curso.id} >SELECCIONAR CLASE</button>
-                                        <br>`                              
+                                        <br>
+                                        </div>`;                              
                 
 
                 tarjeta.appendChild(contenedor)     
@@ -38,10 +40,11 @@ function cargarArrayCursos (cursos) {
         info.addEventListener("click", mostrarInfo)   
         function mostrarInfo(){
                 Swal.fire({
-                text: curso.descripcion,
-                confirmButtonText: 'Ok',
-                confirmButtonColor: "#fa78f3"
-                })
+                  text: curso.descripcion,
+                  confirmButtonText: "Ok",
+                  confirmButtonColor: "#f06565",
+                  background: "rgb(216, 208, 213)",
+                });
            
        }           
 })
@@ -70,7 +73,7 @@ function obtenerTotal(){
     if (carrito.length > 0) {
         Swal.fire({
         text: 'Calculando el total...',
-        timer: 3000,
+        timer: 1500,
         didOpen: () => {
           Swal.showLoading()
         }
@@ -78,7 +81,7 @@ function obtenerTotal(){
         setTimeout (()=> {
             let resultadoPrecios = carrito.reduce((acc, elemento)=>acc + elemento.precio, 0)    
             promocion(resultadoPrecios)
-        }, 3000)          
+        }, 1500)          
     }else {
             Swal.fire({
                 text: 'No se seleccionaron clases',

@@ -22,7 +22,10 @@
 <body>
     <header>
             <img src="..\media\dibujo.jpg" width="50%" class="rounded mx-auto d-block"></img>
-            <nav class="navbar bg-body-tertiary"><a class="navbar-brand" href="..\index.html">Home</a></nav>
+            <br>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">                
+                <a class="navbar-brand text-light" href="..\index.html">Home</a>
+            </nav>
             <h1>Clases disponibles en el estudio</h1>
     </header>
 
@@ -81,19 +84,19 @@
                 <section id="rellenar">
                     <input type="hidden" name="contact_number">         
                     <label class="form-label" for="nombre">
-                        Ingresa tu Nombre:
+                        Ingresá tu Nombre:
                     </label>
-                    <input class="form-control" type="text" name="user_name" id="nombre" placeholder="USUARIO1" required readonly>
+                    <input class="form-control" type="text" name="user_name" id="nombre" placeholder="Nombre" required>
                     <br>          
                     <label class="form-label" for="email">
-                            Ingresa tu Email:
+                            Ingresá tu Email:
                     </label>
-                    <input class="form-control" type="email" name="user_email" id="email" placeholder="USUARIO1@mail.com" required readonly>
+                    <input class="form-control" type="email" name="user_email" id="email" placeholder="xxxx@mail.com" required>
                     <br>  
                     <label class="form-label" for="whatsapp" >
-                        Ingresa tu número de celular:
+                        Ingresá tu número de celular:
                     </label>
-                        <input class="form-control" id="whatsapp" placeholder="1511223344" required readonly>
+                        <input class="form-control" id="whatsapp" placeholder="Celular" required>
                     <br>
                     <label class="form-label" for="medio">¿Por donde preferís que nos comuniquemos? </label>
                     <input type="radio" name="opcion" value="email" /> Email
@@ -102,7 +105,7 @@
                     <label class="form-label" for="consulta">
                         Escribinos tu consulta:
                     </label>
-                    <textarea class="form-control" name="message" id="consulta" placeholder="Me tomé la libertad de llenar todos los campos para ahorrarle algo de tiempo. Para verificar la respuesta automática al mail o el resto de los campos, sacar el required del HTML" required readonly></textarea>
+                    <textarea class="form-control" name="message" id="consulta" placeholder="Escribí tu mensaje" required></textarea>
                     <br>            
                     
                 </section>      

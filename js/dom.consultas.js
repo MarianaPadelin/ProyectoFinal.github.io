@@ -66,7 +66,7 @@ function generarTabla(eleccion){
 
     Swal.fire({
         text: 'Buscando resultados',
-        timer: 3000,
+        timer: 1500,
         didOpen: () => {
           Swal.showLoading()
         }
@@ -96,7 +96,7 @@ function generarTabla(eleccion){
                 confirmButtonColor: "#fa78f3"
             })
         }
-    }, 3000)
+    }, 1500)
 }
 
 

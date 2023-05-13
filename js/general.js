@@ -18,7 +18,15 @@ function mensajeCargando(){
 function generarFooter() {
     let footer =document.getElementById("footer")
     let contenedor = document.createElement('div')
-        contenedor.innerHTML = `© 2023 | Danzas Mariana Padelin | Instagam: <a href="https://www.instagram.com/pas.de.lin/" target="_blank">@pas.de.lin</a> | Whatsapp: 1169551441`
+        contenedor.innerHTML = `<div class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+                                    <div class="col-lg-4 d-flex align-items-center">
+                                        <!--<img src="media\icono.jpg" width=40 id="icono">-->
+                                        <span class="navbar-brand text-dark text-body-secondary">&copy; 2023 Estudio de danzas Mariana Padelin</span>
+                                    </div>
+                                    <ul class="nav list-unstyled d-flex justify-content-between align-items-center">
+                                         <li class="ms-3"><a class="navbar-brand text-dark" href="https://www.instagram.com/pas.de.lin/?hl=es" target="_blank"><img src="https://www.citypng.com/public/uploads/preview/-51609193448mids70tdmp.png" width=40 id="instagram"></a></li>
+                                    </ul>
+                                    </div>`;
         footer.appendChild(contenedor)
                     
 }

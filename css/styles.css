@@ -13,8 +13,8 @@ body {
 
 
 main {
-    background-color: rgb(255, 226, 190);
-    opacity: 40%;    
+    background-color: rgb(216, 208, 213);
+    opacity: 60%;    
     border-radius: 3vw;
     padding: 2vw;
 }
@@ -31,13 +31,17 @@ h3 {
 
 img {
     border: 1vw solid #555;
-    margin: 1vw;
 }
 
 
 section {
     margin-left: 15px;
     margin-right: 15px;
+}
+
+#presentacion {
+    border-radius: 3vw;
+    opacity:1;
 }
 
 .table-table-striped {
@@ -49,18 +53,14 @@ section {
 
 #total {
     position: fixed;
-    top: 80%;
+    top: 60%;
     left:90%;
 }
 
 #clear {
     position: fixed;
-    top: 90%;
+    top: 70%;
     left:90%;
-}
-
-#imagen-tarjeta{
-    width: 20px;
 }
 
 nav {
@@ -77,8 +77,9 @@ a {
 form {
     padding: 3vw;
 }
+
 .form-select{
-    background-color:bisque;
+    background-color:rgb(216, 208, 213);
 }
 
 label {
@@ -86,9 +87,27 @@ label {
 }
 
 
-div {
-    display: inline-block;
+#disponibles{
+    box-sizing: border-box;
+    width: 40%;
+}
+/*
+#tarjeta{
+
+    margin:1vw;
+    display: block;
+    width: 100%;
+}*/
+
+#tarjeta {
+    opacity:1;
     margin: 1vw;
+}
+
+
+
+#imagen-tarjeta{
+    width: 20px;
 }
 
 .ocultar {
@@ -97,12 +116,36 @@ div {
 
 
 footer {
-    background-color: rgba(49, 47, 47, 0.3);
+    background-color: rgba(49, 47, 47, 0.5);
     border-radius: 3vw;
     text-align: center;
-    display: flex;
-    padding: 2vw;
     margin-top: 2vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
 }
 
+#instagram {
+    border: none !important;
+    border-radius: 1vw;
+    opacity: 80%;
+}
 
+#icono {
+    border: none !important;
+    border-radius: 1vw;
+    opacity: 80%;
+}
+
+.carousel-item{
+  Position:relative;
+  }
+  .carousel-item:before {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.3);
+  }
