@@ -20,7 +20,7 @@ function generarFooter() {
     let contenedor = document.createElement('div')
         contenedor.innerHTML = `<div class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
                                     <div class="col-lg-4 d-flex align-items-center">
-                                        <a href="#" title="Volver arriba"><img src="media\icono.jpg" width=40 id="icono"></a>
+                                        <a href="#" title="Volver arriba"><img src='media\icono.jpg' width=40 id="icono"></a>
                                         <span class="navbar-brand text-dark text-body-secondary">&copy; 2023 Estudio de danzas Mariana Padelin</span>
                                     </div>
                                     <ul class="nav list-unstyled d-flex justify-content-between align-items-center">
