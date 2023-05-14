@@ -51,18 +51,6 @@ section {
     padding-bottom: 10vw;
 }
 
-#total {
-    position: fixed;
-    top: 60%;
-    left:90%;
-}
-
-#clear {
-    position: fixed;
-    top: 70%;
-    left:90%;
-}
-
 nav {
     background-color:rgb(255, 226, 190);
     opacity: 40%; 
@@ -86,12 +74,14 @@ label {
     line-height: 36px;
 }
 
-
+/*
 #disponibles{
     box-sizing: border-box;
     width: 40%;
+    margin:0;
+    
 }
-/*
+
 #tarjeta{
 
     margin:1vw;
@@ -99,9 +89,8 @@ label {
     width: 100%;
 }*/
 
-#tarjeta {
-    opacity:1;
-    margin: 1vw;
+#tarjeta{
+    margin: 2vh;
 }
 
 
@@ -133,7 +122,7 @@ footer {
 #icono {
     border: none !important;
     border-radius: 1vw;
-    opacity: 80%;
+    opacity: 60%;
 }
 
 .carousel-item{
@@ -147,5 +136,52 @@ footer {
     bottom:0;
     left:0;
     right:0;
-    background:rgba(0,0,0,0.3);
+    background:rgba(0,0,0,0.5);
   }
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+.row>* {
+    flex-shrink: 0;
+    width: 25%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
+
+}
+
+.row::after{
+        opacity: 0.8;
+}
+
+
+#total {
+    position: fixed;
+    top: 60%;
+    left:90%;
+}
+
+#clear {
+    position: fixed;
+    top: 70%;
+    left:90%;
+}
+
+#fondo {
+    opacity: 0.8;
+}
+
+#iconoTitulo {
+    border:none;
+    width: 20vw;
+}

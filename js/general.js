@@ -20,11 +20,13 @@ function generarFooter() {
     let contenedor = document.createElement('div')
         contenedor.innerHTML = `<div class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
                                     <div class="col-lg-4 d-flex align-items-center">
-                                        <a href="#" title="Volver arriba"><img src='media\icono.jpg' width=40 id="icono"></a>
+                                        <a href='#' title="Volver arriba"><img src='media/icono.png' height=50 id="icono"/></a>
                                         <span class="navbar-brand text-dark text-body-secondary">&copy; 2023 Estudio de danzas Mariana Padelin</span>
                                     </div>
                                     <ul class="nav list-unstyled d-flex justify-content-between align-items-center">
-                                         <li class="ms-3"><a class="navbar-brand text-dark" href="https://www.instagram.com/pas.de.lin/?hl=es" title="Visitá nuestro instagram!" target="_blank"><img src="https://www.citypng.com/public/uploads/preview/-51609193448mids70tdmp.png" width=40 id="instagram"></a></li>
+                                         <li class="ms-3"><a class="navbar-brand text-dark" href="https://www.instagram.com/estudioglams/" title="Visitá nuestro instagram!" target="_blank"><img src='media/instagram.png' height=40 id="instagram"></a></li>
+                                         <li class="ms-3"><a class="navbar-brand text-dark" href="https://www.facebook.com/watch/?v=471344660006374" title="Visitá nuestro facebook!" target="_blank"><img src='media/facebook.png' height=50 id="instagram"></a></li>
+                                         <li class="ms-3"><a class="navbar-brand text-dark" href="https://www.tiktok.com/@rickastleyofficial/video/6890858524092402946" title="Visitá nuestro tik tok!" target="_blank"><img src='media/tiktok.png' height=40 id="instagram"></a></li>
                                     </ul>
                                     </div>`;
         footer.appendChild(contenedor)

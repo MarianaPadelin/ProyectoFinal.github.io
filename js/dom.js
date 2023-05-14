@@ -18,17 +18,18 @@ obtenerCursos()
 
 function cargarArrayCursos (cursos) {
         cursos.forEach(curso => {
-            let contenedor = document.createElement('div')      
-                contenedor.innerHTML += `<div class="col-6" id="tarjeta">
-                                        <img style="width:200px" src="${curso.imagen}">
-                                        <h4>${curso.nombre}</h4>
-                                        <p><b>DIFICULTAD: ${curso.dificultad}</b></p>
-                                        <p><b>EDAD: ${curso.edad}</b></p>
-                                        <p><b>${curso.horario}</b></p>
-                                        <button type="button" class="btn btn-secondary"id=info-${curso.id} >+INFO</button>
-                                        <br>                            
-                                        <button type="button" class="btn btn-primary" id=${curso.id} >SELECCIONAR CLASE</button>
-                                        <br>
+            let contenedor = document.createElement('aside')      
+                contenedor.innerHTML += `<div class="card h-100 w-100 text-center column" id="tarjeta">
+                                            <img class="card-img-top" style="text-align:center" src="${curso.imagen}">
+                                            <div class="card-body">
+                                                <h4 class="card-title">${curso.nombre}</h4>
+                                                <p class="card-text"><b>DIFICULTAD: ${curso.dificultad}</b></p>
+                                                <p class="card-text"><b>EDAD: ${curso.edad}</b></p>
+                                                <p class="card-text"><b>${curso.horario}</b></p>
+                                                <button type="button" class="btn btn-secondary"id=info-${curso.id} >+INFO</button>
+                                                <br>                            
+                                                <button type="button" class="btn btn-primary" id=${curso.id} >SELECCIONAR CLASE</button>
+                                            </div>
                                         </div>`;                              
                 
 
